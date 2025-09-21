@@ -60,14 +60,10 @@ a {
 
 .navbar a:hover,
 .navbar a.active {
-    background: greenyellow;
     font-weight: bold;
     border-radius: 4px;
-    color: #000;
-}
-
-.navbar a:focus {
-    outline: 2px solid greenyellow;
+    color: #fff;
+    text-decoration: underline rgb(0, 238, 255);
 }
 
 /* Hero */
@@ -80,6 +76,25 @@ a {
     text-align: center;
     display: flex;
     color: #fff;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
 }
 
 .home-hero {
@@ -127,6 +142,7 @@ a {
     display: inline-block;
     transition: background 0.3s;
     cursor: pointer;
+    ;
 }
 
 .btn:hover {
@@ -141,7 +157,7 @@ a {
 
 .about-gym h2 {
     font-size: 33px;
-    color: greenyellow;
+    color: rgb(0, 238, 255);
     margin-bottom: 20px;
 }
 
@@ -231,7 +247,7 @@ a {
 .about-section h2,
 .highlight-section h2 {
     font-size: 32px;
-    color: greenyellow;
+    color: rgb(0, 238, 255);
     margin-bottom: 20px;
 }
 
@@ -273,7 +289,7 @@ a {
 }
 
 .plans h2 {
-    color: greenyellow;
+    color: rgb(0, 238, 255);
     margin-bottom: 20px;
     font-size: 32px;
 }
@@ -297,7 +313,7 @@ a {
 
 .card:hover {
     transform: scale(1.05);
-    border-color: greenyellow;
+    border-color: rgb(0, 238, 255);
 }
 
 .card h3 {
@@ -349,7 +365,7 @@ a {
 .services h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: greenyellow;
+    color: rgb(0, 238, 255);
 }
 
 .services-container {
@@ -391,7 +407,7 @@ a {
 
 .service-card:hover {
     transform: scale(1.05);
-    border-color: greenyellow;
+    border-color: rgb(0, 238, 255);
 }
 
 .why-us {
@@ -426,7 +442,7 @@ a {
 .reviews h2 {
     font-size: 31px;
     margin-bottom: 20px;
-    color: greenyellow;
+    color: rgb(0, 238, 255);
 }
 
 .review-container {
@@ -460,7 +476,7 @@ a {
 
 .review-card:hover {
     transform: scale(1.05);
-    border-color: greenyellow;
+    border-color: rgb(0, 238, 255);
 }
 
 .review-card .stars {
@@ -473,7 +489,7 @@ a {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid greenyellow;
+    border: 2px solid rgb(0, 238, 255);
     margin-bottom: 15px;
 }
 
@@ -488,7 +504,7 @@ a {
 .contact h2 {
     font-size: 31px;
     margin-bottom: 20px;
-    color: greenyellow;
+    color: rgb(0, 238, 255);
 }
 
 .contact-container {
@@ -548,6 +564,6 @@ a {
 }
 
 .contact-info i {
-    color: greenyellow;
+    color: rgb(0, 238, 255);
     margin-right: 8px;
 }
